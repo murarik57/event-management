@@ -1,7 +1,7 @@
 {
   "name": "event-management",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://murarik57.github.io/event-management",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
