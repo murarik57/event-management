@@ -159,6 +159,7 @@ const Eventstable = () => {
           className="fw"
           columns={getTableColumns(getColumnSearchProps)}
           dataSource={data}
+          scroll={{ x: "100%" }}
           pagination={{
             showSizeChanger: false,
           }}

@@ -14,7 +14,8 @@ const getTableColumns = (getColumnSearchProps) => {
     {
       title: "Event Name",
       dataIndex: "event_name",
-      width: 130,
+      width: 180,
+      ellipsis: true,
       ...getColumnSearchProps("event_name"),
     },
     {
@@ -61,7 +62,7 @@ const getTableColumns = (getColumnSearchProps) => {
     {
       title: "Description",
       dataIndex: "description",
-      width: 200,
+      width: 180,
       ellipsis: true,
     },
     {

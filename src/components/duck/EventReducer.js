@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { dummyData } from "../../utils/constants";
 
 const initialState = {
-  events: [...dummyData],
+  events: [],
 };
 
 const eventsSlice = createSlice({
