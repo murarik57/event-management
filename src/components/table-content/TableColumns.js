@@ -36,7 +36,7 @@ const getTableColumns = (getColumnSearchProps) => {
           <Row justify="start" align="middle">
             <Col justify="center" align="middle">
               <CalendarOutlined className="mr5" />
-              {moment(date).format("ddd, MMMM Do, YYYY")}
+              {date.format("ddd, MMMM Do, YYYY")}
             </Col>
           </Row>
         );
@@ -49,11 +49,13 @@ const getTableColumns = (getColumnSearchProps) => {
       width: 165,
       sorter: (a, b) => moment(a.end_date).unix() - moment(b.end_date).unix(),
       render: (date) => {
+        console.log("date", date);
+
         return (
           <Row justify="start" align="middle">
             <Col justify="center" align="middle">
               <CalendarOutlined className="mr5" />
-              {moment(date).format("ddd, MMMM Do, YYYY")}
+              {date.format("ddd, MMMM Do, YYYY")}
             </Col>
           </Row>
         );
