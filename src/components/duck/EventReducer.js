@@ -12,8 +12,8 @@ const eventsSlice = createSlice({
       state.events.push({ id: Date.now(), ...action.payload });
     },
     updateEvent: (state, action) => {
-      state.events.map((event) => {
-        if (event.id !== action.payload.id) {
+      state.events = state.events.map((event) => {
+        if (event.id === action.payload.id) {
           return action.payload;
         } else {
           return event;
