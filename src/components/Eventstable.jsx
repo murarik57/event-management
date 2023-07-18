@@ -4,7 +4,7 @@ import { SearchOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { routes } from "../utils/constants";
 import { useSelector } from "react-redux";
-import { EyeOutlined } from "@ant-design/icons";
+import { EditOutlined } from "@ant-design/icons";
 import getTableColumns from "./table-content/TableColumns";
 
 const Eventstable = () => {
@@ -130,7 +130,7 @@ const Eventstable = () => {
         ...event,
         view: (
           <Tooltip placement="top" title={"View Details"}>
-            <EyeOutlined
+            <EditOutlined
               className="ml10"
               onClick={() => navigate(`${routes.EVENT}/${event.id}`)}
             />
